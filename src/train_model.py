@@ -1,4 +1,4 @@
-import tensorflow as tf
+'''import tensorflow as tf
 import numpy as np
 import random
 import matplotlib.pyplot as plt
@@ -153,5 +153,4 @@ class create_model:
         print("\n-----------------------------------")
         print("Test Loss and Accuracy: ",model.evaluate(test_data))
 
-        self.plot_loss_curves(history)
-        
+        self.plot_loss_curves(history)'''
