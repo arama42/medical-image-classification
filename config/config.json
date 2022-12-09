@@ -1,8 +1,8 @@
 {
-    "experiment_name":"baseline_vgg_chest_xray",
+    "experiment_name":"baseline_inception_chest_xray",
     "num_classes":2,
     "generate_coreset": true,
-    "model_arch":"vgg",
+    "model_arch":"inception",
     "data_dir":{
         "train":"../../Dataset/chest_xray/chest_xray/train",
         "val": "../../Dataset/chest_xray/chest_xray/val",
@@ -11,8 +11,11 @@
     "train_params": {
         "learning_rate": 0.0001,
         "batch_size": 64,
-        "epochs": 5,
+        "epochs": 10,
         "early_stopping": true,
         "saved_model_path":"../../Dataset/Models/"
+    },
+    "infer_params": {
+        "infer_model_path": "../../../Project/InceptionNet/v2_flip_inception_chest_xray_e10_b64.h5"
     }
 }
